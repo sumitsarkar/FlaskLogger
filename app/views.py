@@ -9,7 +9,6 @@ from wtforms import fields
 # Import the functions and classes from flask and it's extensions
 from flask import abort, render_template, redirect, request, url_for, flash, g, session, jsonify
 from flask.ext.login import login_user, logout_user, current_user, login_required
-#from itsdangerous import URLSafeSerializer, BadSignature
 
 # Import the forms
 from forms import LogInForm, EditPost, EditInfo
@@ -17,7 +16,7 @@ from forms import LogInForm, EditPost, EditInfo
 # Import the models from the database
 from models import User, Post, Info
 
-from sqlalchemy import event, func, asc, desc
+from sqlalchemy import func, desc
 
 ALLOWED_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']
 
@@ -33,6 +32,15 @@ def before_request():
 	g.user = current_user
 	g.info = Info.query.first()
 	app.config['UPLOAD_FOLDER'] = url_for('static', filename='images')
+
+
+
+
+###########################################################
+#														  #	
+#					  USER VIEWS						  #
+#														  #	
+###########################################################
 	
 @app.route('/')
 def index():
@@ -65,8 +73,6 @@ def logout():
 	flash("Logged Out  Successfully")
 	return redirect(url_for('index'))
 
-
-######################################### NEW CODE STARTS HERE!!! ##################################
 
 @app.route('/<post_slug>')
 def post(post_slug):

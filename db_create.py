@@ -13,10 +13,10 @@ else:
     api.version_control(SQLALCHEMY_DATABASE_URI, SQLALCHEMY_MIGRATE_REPO, api.version(SQLALCHEMY_MIGRATE_REPO))
 
 
-admin_user = User(email='mail@sumit.me', password = 'sumit1214212')
+admin_user = User(email='demo@example.com', password = 'demo123')
 db.session.add(admin_user)
 db.session.commit()
 
-info = Info(title = 'My Blog', description = u'MY first stupid shitty blogging script!', header_color = '#34495e')
+info = Info(title = 'My Blog', description = u'My first blogging script!', header_color = '#34495e')
 db.session.add(info)
 db.session.commit()
