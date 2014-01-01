@@ -1,0 +1,185 @@
+.crevasse_reset {
+  /* HTML5 display-role reset for older browsers */ }
+  .crevasse_reset html, .crevasse_reset body, .crevasse_reset div, .crevasse_reset span, .crevasse_reset applet, .crevasse_reset object, .crevasse_reset iframe,
+  .crevasse_reset h1, .crevasse_reset h2, .crevasse_reset h3, .crevasse_reset h4, .crevasse_reset h5, .crevasse_reset h6, .crevasse_reset p, .crevasse_reset blockquote, .crevasse_reset pre,
+  .crevasse_reset a, .crevasse_reset abbr, .crevasse_reset acronym, .crevasse_reset address, .crevasse_reset big, .crevasse_reset cite, .crevasse_reset code,
+  .crevasse_reset del, .crevasse_reset dfn, .crevasse_reset em, .crevasse_reset img, .crevasse_reset ins, .crevasse_reset kbd, .crevasse_reset q, .crevasse_reset s, .crevasse_reset samp,
+  .crevasse_reset small, .crevasse_reset strike, .crevasse_reset strong, .crevasse_reset sub, .crevasse_reset sup, .crevasse_reset tt, .crevasse_reset var,
+  .crevasse_reset b, .crevasse_reset u, .crevasse_reset i, .crevasse_reset center,
+  .crevasse_reset dl, .crevasse_reset dt, .crevasse_reset dd, .crevasse_reset ol, .crevasse_reset ul, .crevasse_reset li,
+  .crevasse_reset fieldset, .crevasse_reset form, .crevasse_reset label, .crevasse_reset legend,
+  .crevasse_reset table, .crevasse_reset caption, .crevasse_reset tbody, .crevasse_reset tfoot, .crevasse_reset thead, .crevasse_reset tr, .crevasse_reset th, .crevasse_reset td,
+  .crevasse_reset article, .crevasse_reset aside, .crevasse_reset canvas, .crevasse_reset details, .crevasse_reset embed,
+  .crevasse_reset figure, .crevasse_reset figcaption, .crevasse_reset footer, .crevasse_reset header, .crevasse_reset hgroup,
+  .crevasse_reset menu, .crevasse_reset nav, .crevasse_reset output, .crevasse_reset ruby, .crevasse_reset section, .crevasse_reset summary,
+  .crevasse_reset time, .crevasse_reset mark, .crevasse_reset audio, .crevasse_reset video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  .crevasse_reset article, .crevasse_reset aside, .crevasse_reset details, .crevasse_reset figcaption, .crevasse_reset figure,
+  .crevasse_reset footer, .crevasse_reset header, .crevasse_reset hgroup, .crevasse_reset menu, .crevasse_reset nav, .crevasse_reset section {
+    display: block; }
+  .crevasse_reset body {
+    line-height: 1; }
+  .crevasse_reset ol, .crevasse_reset ul {
+    list-style: none; }
+  .crevasse_reset blockquote, .crevasse_reset q {
+    quotes: none; }
+  .crevasse_reset blockquote:before, .crevasse_reset blockquote:after,
+  .crevasse_reset q:before, .crevasse_reset q:after {
+    content: '';
+    content: none; }
+  .crevasse_reset table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.post-content {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  font-family: Helvetica,arial,freesans,clean,sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #000; }
+  .post-content > *:first-child {
+    margin-top: 0 !important; }
+  .post-content > *:last-child {
+    margin-bottom: 0 !important; }
+  .post-content a {
+    color: #4183C4;
+    text-decoration: none; }
+    .post-content a:hover {
+      text-decoration: underline; }
+  .post-content strong {
+    font-weight: bold; }
+  .post-content em {
+    font-style: italic; }
+  .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased; }
+    .post-content h1 tt, .post-content h1 code, .post-content h2 tt, .post-content h2 code, .post-content h3 tt, .post-content h3 code, .post-content h4 tt, .post-content h4 code, .post-content h5 tt, .post-content h5 code, .post-content h6 tt, .post-content h6 code {
+      font-size: inherit; }
+    .post-content h1 + p, .post-content h2 + p, .post-content h3 + p, .post-content h4 + p, .post-content h5 + p, .post-content h6 + p {
+      margin-top: 0; }
+  .post-content h1 {
+    font-size: 28px;
+    color: #000; }
+  .post-content h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #000; }
+  .post-content h3 {
+    font-size: 18px; }
+  .post-content h4 {
+    font-size: 16px; }
+  .post-content h5 {
+    font-size: 14px; }
+  .post-content h6 {
+    color: #777;
+    font-size: 14px; }
+  .post-content p, .post-content blockquote, .post-content ul, .post-content ol, .post-content dl, .post-content table, .post-content pre {
+    margin: 15px 0; }
+  .post-content hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    height: 0;
+    padding: 0; }
+  .post-content ul, .post-content ol {
+    padding-left: 30px; }
+    .post-content ul li, .post-content ol li {
+      margin: 5px 0; }
+      .post-content ul li:first-child, .post-content ol li:first-child {
+        margin-top: 0; }
+      .post-content ul li:last-child, .post-content ol li:last-child {
+        margin-bottom: 0; }
+    .post-content ul li > :first-child, .post-content ol li > :first-child {
+      margin-top: 0; }
+    .post-content ul li > :last-child, .post-content ol li > :last-child {
+      margin-bottom: 0; }
+  .post-content ul {
+    list-style-type: disc; }
+  .post-content ol {
+    list-style-type: decimal; }
+  .post-content dl {
+    padding: 0; }
+    .post-content dl dt {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0;
+      margin: 15px 0 5px; }
+      .post-content dl dt:first-child {
+        padding: 0; }
+      .post-content dl dt > :first-child {
+        margin-top: 0; }
+      .post-content dl dt > :last-child {
+        margin-bottom: 0; }
+    .post-content dl dd {
+      margin: 0 0 15px;
+      padding: 0 15px; }
+      .post-content dl dd > :first-child {
+        margin-top: 0; }
+      .post-content dl dd > :last-child {
+        margin-bottom: 0; }
+  .post-content blockquote {
+    border-left: 4px solid #DDD;
+    padding: 0 15px;
+    color: #777; }
+    .post-content blockquote > :first-child {
+      margin-top: 0; }
+    .post-content blockquote > :last-child {
+      margin-bottom: 0; }
+  .post-content table {
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+    font: inherit; }
+    .post-content table tr {
+      border-top: 1px solid #ccc;
+      background-color: #fff;
+      margin: 0;
+      padding: 0; }
+      .post-content table tr:nth-child(2n) {
+        background-color: #f8f8f8; }
+      .post-content table tr th, .post-content table tr td {
+        border: 1px solid #ccc;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px; }
+        .post-content table tr th > :first-child, .post-content table tr td > :first-child {
+          margin-top: 0; }
+        .post-content table tr th > :last-child, .post-content table tr td > :last-child {
+          margin-bottom: 0; }
+      .post-content table tr th {
+        font-weight: bold; }
+  .post-content img {
+    max-width: 100%; }
+  .post-content code, .post-content tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    font-family: courier;
+    white-space: pre-wrap; }
+  .post-content pre > code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent; }
+  .post-content pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px; }

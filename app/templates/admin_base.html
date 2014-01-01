@@ -1,0 +1,40 @@
+<html class='no-js'>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+
+		{% if page_title %}
+		<title>{{page_title}}</title>
+		{% else %}
+		<title>CSE Project Home</title>
+		{% endif %}
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<link rel="stylesheet" href="http://i.icomoon.io/public/temp/f1aacb7c6f/UntitledProject1/style.css">
+		<style type="text/css">
+			b
+			.pure-g-r [class *= "pure-u"] {
+			    /* Set your content font stack here: */
+			    font-family: 'Lato', sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/admin_style.css')}}">
+	</head>
+	<body>
+		<div class='pure-g-r'>
+			<div class='pure-u-1 admin-header-bar'>
+
+				<h3 class='text'>Yoda's Home</h3>
+				{% if g.user.is_authenticated() %}
+					<a class='pure-button pure-button-error logout' href="{{url_for('logout')}}">Logout</a>		
+					<a class='pure-button pure-button-success admin' href="{{url_for('admin')}}">See Posts</a>
+					<a class='pure-button pure-button-success admin' href="{{url_for('update_info')}}">Update Info</a>
+				{% endif %}
+			</div>
+		</div>
+		<div class='pure-g-r admin-content-container'>
+			{% block content %}
+
+			{% endblock %}
+		</div>
+	</body>
+</html>
