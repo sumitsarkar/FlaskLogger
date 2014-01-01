@@ -3,6 +3,13 @@ FlaskLogger
 
 Flask application for blogging using Markdown
 
+## [Demo](http://flasklogger.sumit.me)
+
+Link to admin : [http://flasklogger.sumit.me/admin](http://flasklogger.sumit.me/admin)
+Admin username = demo@example.com
+password = demo123
+
+
 I have become a hardcore flask fan since last 3 months. I have been looking around and around but I couldn't find any decent Flask based blogging application. I wanted to blog using Flask.
 
 This is the result of my love for Flask and Markdown.
