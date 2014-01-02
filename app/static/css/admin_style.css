@@ -227,3 +227,56 @@ a,div,h1,h2,h3,h4,h5,h6,header,p,span{
 	padding-top: 1em;
 	font-weight: bold;
 }
+
+
+
+/**************************************SHITTTTTTTTTTTT*****************************/
+
+
+
+#the_previewer .imagePreview{
+	text-align: center;
+	margin: auto;
+	background: #ecf0f1;
+}
+
+#the_previewer .imagePreview img{
+	border: 3px solid #fff;
+	box-shadow: 0 0 2px #000;
+	max-height: 300px;
+}
+
+#the_previewer .uploaded{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+}
+
+#the_previewer .imagePreview.done .uploaded{
+	display: block;
+}
+
+#the_previewer .progressHolder{
+	background-color:#252f38;
+	height: 12px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0 0 2px #000;
+}
+
+#the_previewer .progress{
+	background-color:#2586d0;
+	height: 12px;
+	width: 0;
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+	-moz-transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#the_previewer .imagePreview.done .progress{
+	width: 100% !important;
+}

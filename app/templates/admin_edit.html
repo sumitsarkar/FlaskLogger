@@ -1,19 +1,5 @@
 {% extends "admin_base.html" %}
 {% block content %}
-<link href="{{url_for('static', filename='css/crevasse.css')}}" media="screen" rel="stylesheet" type="text/css" />
-<!-- dependencies -->
-<script type="text/javascript" src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static', filename='js/jquery.caret.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static', filename='js/jquery.scrollTo.min.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static', filename='js/marked.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static', filename='js/rainbow-custom.min.js')}}"></script>
-<link href="{{url_for('static', filename='css/solarized-light.css')}}" media="screen" rel="stylesheet" type="text/css" />
-	<!-- crevasse js lib -->
-<script type="text/javascript" src="{{url_for('static', filename='js/crevasse.js')}}"></script>
-
-<script type="text/javascript" src="{{url_for('static', filename='js/jquery.filedrop.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static', filename='js/upload.js')}}"></script>
-
 
 
 
@@ -47,7 +33,7 @@
 			<h4>Live Preview:</h4>
 		</div>
 		<div class='pure-u-1-2 editor_container'>
-			{{ form.content }}
+			{{form.content}}
 		</div>
 		<div class="pure-u-1-2 previewer_container">
 			<div id="the_previewer"></div>
@@ -62,6 +48,30 @@
 	</form>
 </div>
 
+
+<script type="text/javascript">
+
+	function getCursor(textarea) {
+	    return textarea.value.substr(0, textarea.selectionStart).length;
+	}
+</script>
+
+
+
+<link href="{{url_for('static', filename='css/crevasse.css')}}" media="screen" rel="stylesheet" type="text/css" />
+<!-- dependencies -->
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery.caret.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery.scrollTo.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/marked.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/rainbow-custom.min.js')}}"></script>
+<link href="{{url_for('static', filename='css/solarized-light.css')}}" media="screen" rel="stylesheet" type="text/css" />
+	<!-- crevasse js lib -->
+<script type="text/javascript" src="{{url_for('static', filename='js/crevasse.js')}}"></script>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery.filedrop.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/upload.js')}}"></script>
+
 <script type="text/javascript">
 	$(function () {
 		$("#content").crevasse({
@@ -71,7 +81,6 @@
 		});
 	});
 
-	
 </script>
 
 

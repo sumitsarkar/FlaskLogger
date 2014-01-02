@@ -31,7 +31,7 @@ def load_user(id):
 def before_request():
 	g.user = current_user
 	g.info = Info.query.first()
-	app.config['UPLOAD_FOLDER'] = url_for('static', filename='images')
+	app.config['UPLOAD_FOLDER'] = url_for('static', filename='uploads')
 
 
 
@@ -48,7 +48,12 @@ def index():
 
 	for item in posts:
 		item.publish_date =  item.publish_date.strftime("%B %d, %Y")
-	return render_template('index.html', page_title = 'Posterious', posts = posts)
+	return render_template('index.html', page_title = g.info.title, posts = posts)
+
+@app.route('/test')
+def test():
+	return render_template('test.html', page_title = g.info.title)
+
 
 
 
@@ -123,7 +128,7 @@ def create_new_post():
 				flash("Post Published Successfully")
 			return redirect(url_for('admin'))
 		elif request.form['submit'] == 'Save Draft' and form.validate_on_submit():
-			x = Post(title = form.title.data, content = form.content.data, tags = form.tags.data,)
+			x = Post(title = form.title.data, content = form.content.data, tags = form.tags.data)
 			db.session.add(x)
 			db.session.commit()
 			if x:
