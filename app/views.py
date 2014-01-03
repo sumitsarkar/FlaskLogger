@@ -50,13 +50,6 @@ def index():
 		item.publish_date =  item.publish_date.strftime("%B %d, %Y")
 	return render_template('index.html', page_title = g.info.title, posts = posts)
 
-@app.route('/test')
-def test():
-	return render_template('test.html', page_title = g.info.title)
-
-
-
-
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
 	if g.user is not None and g.user.is_authenticated():
@@ -79,7 +72,7 @@ def logout():
 	return redirect(url_for('index'))
 
 
-@app.route('/<post_slug>')
+@app.route('/post/<post_slug>')
 def post(post_slug):
 	post = Post.query.filter(func.lower(Post.title) == func.lower(post_slug)).first()
 	
